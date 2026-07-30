@@ -1,0 +1,38 @@
+# config.yaml
+
+env_profiles:
+  cartpole:
+    env: "CartPole-v1"
+    common:
+      gamma: 0.99
+      alpha: 0.7
+      l_th: 100
+      th_mu: 0.5
+      th_sigma: 0.03
+      cr: 1.0
+      ca: 1.0
+      alpha_decay: 0.0015
+      c: 2.0
+    forest_agent:
+      n_trees: 10
+      feature_fraction: 0.6
+    training:
+      episodes: 1000
+
+  acrobot:
+    env: "Acrobot-v1"
+    common:
+      gamma: 0.99
+      alpha: 0.7
+      l_th: 100
+      th_mu: 5
+      th_sigma: 1
+      cr: 1.0
+      ca: 1.0
+      alpha_decay: 0.001
+      c: 2.0
+    forest_agent:
+      n_trees: 10
+      feature_fraction: 0.6
+    training:
+      episodes: 1000
